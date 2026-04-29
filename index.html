@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="UTF-8">
+<title>Қыз ұзату - Айшабибі</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+body{
+margin:0;
+font-family: 'Montserrat', sans-serif;
+background: linear-gradient(135deg,#fff6f9,#fdfdfd);
+overflow-x:hidden;
+color:#333;
+}
+
+.ornament {
+position: fixed;
+width: 200px;
+height: 200px;
+background: url('https://i.ibb.co/6bQ5XqS/ornament.png');
+background-size: contain;
+opacity: 0.15;
+animation: float 10s infinite linear;
+}
+
+@keyframes float{
+0%{transform: translateY(0) rotate(0deg);}
+50%{transform: translateY(-30px) rotate(180deg);}
+100%{transform: translateY(0) rotate(360deg);}
+}
+
+.center{
+text-align:center;
+padding:60px 20px;
+}
+
+h1{
+font-family:'Great Vibes', cursive;
+font-size:60px;
+margin:10px 0;
+}
+
+h2{
+font-weight:400;
+}
+
+.btn{
+display:inline-block;
+padding:12px 25px;
+background:#c2185b;
+color:white;
+border-radius:30px;
+text-decoration:none;
+margin-top:20px;
+}
+
+.music{
+margin-top:20px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- музыка -->
+<audio autoplay loop controls class="music">
+<source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<div class="ornament" style="top:10%;left:5%"></div>
+<div class="ornament" style="bottom:10%;right:5%"></div>
+
+<div class="center">
+<h2>Қыз ұзату</h2>
+<h1>Айшабибі</h1>
+
+<p>Шаңырағың биік,<br> керегең кең болсын!</p>
+
+<a class="btn" href="page2.html">Келесі бет →</a>
+</div>
+
+</body>
+</html>
